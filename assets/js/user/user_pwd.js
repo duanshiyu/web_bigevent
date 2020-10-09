@@ -33,8 +33,8 @@ $(function () {
                 layer.msg('修改密码成功！');
                 // 重置表单
                 $('.layui-form')[0].reset();
-                // localStorage.removeItem('token');
-                // location.href = '../../../login.html';
+                localStorage.removeItem('token');
+                window.parent.location.href = '../../../login.html';
             }
         })
     })
