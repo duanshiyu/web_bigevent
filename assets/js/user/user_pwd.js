@@ -30,7 +30,7 @@ $(function () {
                 if (res.status !== 0) {
                     return layer.msg('修改密码失败！');
                 }
-                layer.msg('修改密码成功！');
+                layer.msg('修改密码成功, 请重新登录！');
                 // 重置表单
                 $('.layui-form')[0].reset();
                 localStorage.removeItem('token');
